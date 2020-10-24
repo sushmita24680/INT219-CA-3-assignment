@@ -1,80 +1,32 @@
-<!Doctype html>
-    <head>
-        <title>₹BHARAT@Yatra</title>
-        </head>
-        <style type="text/css">
-        *{
-            margin: 0px;
-            padding: 0px;
-         }
-         body{ display:flex;
-           flex-flow:column wrap;
-           margin-left: 5px;
-            border-left:30px solid darkblue ;
-        }
-        .main{
-            
-      
-            background-blend-mode:darken;
-        }
-        .gif{
-            position: relative;
-            padding-bottom: 340px;            
-            width: 25%;
-            height: 20%;
-            padding-left:50%;
-            margin-left:2%;
-            
-        }
-        .ad{
-            padding-bottom: 2px;
-        }
-        .maincover{
-            flex: 55%;
-            padding-bottom: 0%;
-           background-image: url('TOURCOVER.jpg');
-           background-repeat: no-repeat;
-           background-position-x: right;
-            margin-left: 5px;
-            padding-bottom: 400px;
-        
-        }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TourtoIndia</title>
+</head>
+<style type="text/css">
+*{
+    margin: 0;
+    padding: 0;
+}
+#background{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(15deg,rgba(240, 239, 238, 0.281) 0%,rgba(253, 255, 250, 0.281)100%),url("torismcover.jpg") center no-repeat;
+    background-size: cover;
+    background-position: fixed;
+    position: relative;
 
-        .heading{
-            color: red;
-            padding-left: 50px;
-            text-shadow:20px black; 
-            font-family:Arial, Helvetica, sans-serif;
-            margin-left:45%;
-            margin-top: 120px;
-            font-style: normal;
-            font-variant: small-caps;
-            font-stretch:condensed;
-        }
-        
-    
-       .imgline{
-              margin-top: 8%;
-              height:250px;
-              width: 500px;
-
-       }
-       .navbar{
-           margin-top: 20px;
-           flex:55%;
-           flex-wrap:nowrap;
-           
- 
-           
-       }
-
-       #container ul{
+}
+#container ul{
                 list-style:none;
+                position: fixed;
             }
 
             #container ul li{
            
-                background-color:transparent;
+                background:linear-gradient(15deg,rgba(240, 239, 238, 0.281) 0%,rgba(253, 255, 250, 0.281)100%) ,transparent;
                padding-left: 15px;
                padding-right:15px ;
                margin-left: 5px;
@@ -86,6 +38,8 @@
                 float: left;
                 color:rgb(14, 13, 13);
                 font-size: 18px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-style: bold;
                 position:relative;
             }
             #container ul li:hover {
@@ -112,69 +66,145 @@
                 top:0px;
                 position: absolute;
             }
-      
-       .main{
-           display: flex;
-           flex-wrap:nowrap;
-       }
 
-       .Packages{background-color:transparent;
-               padding-left: 15px;
-               padding-right:15px ;
-               margin-left: 5px;
-                border-radius: 20px;
-                box-shadow:   2px 3px gainsboro;
-                color:rgb(14, 13, 13);
-                font-size: 18px;
-       }
+            #heading
+            { width: 100%;
+             height: 39%;
+                background:linear-gradient(15deg,rgba(240, 239, 238, 0.281) 0%,rgba(253, 255, 250, 0.281)100%), url("png-hINDIacover.png") center no-repeat;
+           
+            }
 
-        </style>
+            #heading h1{
+                font-family:Arial, Helvetica, sans-serif;
+                font-size: 150px;
+                text-align: center;
+                top: 0;
+                color:#4e3418;
+                
+                /* margin-top: -10px; */
+                padding-top:18px;
+                margin-left: -26px;
 
-    <body>
-        <marquee class="ad" style = "border:2px deeppink solid ;background-color:deeppink; color:ghostwhite;" behavior ="alternate"><b>welcome to ₹BHARAT@Yatra.com</b></marquee>    
+            }
 
-        <div class="main"> 
-        <div class="navbar">
-            <div id = "container">
-                <ul>
-                    <li>Home</li>
-                    <li>Custom Packages
+            #heading h3{
+                font-family:Arial, Helvetica, sans-serif;
+                font-size:25px;
+                 text-align: center; 
+                /* bottom: 108px;  */
+                margin-top: 320px;
+                color:#4e3418;
+                margin-left: -50px;
+
+            }
+            /* #heading h4{
+                font-size: 200px;
+                color: white;
+                font-family:Arial, Helvetica, sans-serif;
+
+            } */
+.box{
+    display: block;
+    padding-left: 20px;
+    margin: 40px;
+
+}
+
+.box h1{
+    border-left: 10px solid rgba(30, 163, 7, 0.801) ;
+    padding:15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgba(30, 163, 7, 0.801);
+    margin-bottom: 20px;
+}
+
+.box p{
+    border-left: 10px solid rgba(30, 163, 7, 0.801) ;
+
+    border-bottom:  solid rgba(30, 163, 7, 0.801) ;
+    padding:15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgba(142, 148, 141, 0.801);
+    margin-bottom: 20px;
+}
+
+
+
+           
+</style>
+
+
+
+
+<body>
+<section id ="background">
+    <marquee class="ad" style = "border:2px deeppink solid ;background-color:deeppink; color:ghostwhite;" behavior ="alternate"><b>welcome to ₹BHARAT@Yatra.com - TourtoIndia</b></marquee>    
+
+    <nav>
+        <div id = "container">
+            <ul>
+                <li>Home</li>
+                <li>Custom Packages
+                    <ul>
+                        <li>Adventure
                         <ul>
-                            <li>Hollywood</li>
-                            <li>looywood
-                                <ul>
-                                    <li>Bilal</li>
-                                    <li>Ahmad</li>
-                                    <li>Arslam</li>
-                                </ul>
-                            </li>
-                            
-                             
+                            <li>Manali</li>
+                            <li>Pangonge</li>
                         </ul>
-                    </li>
-                    <li>Deals</li>
-                    <li>Group Tours</li>
-                    <li>reviews</li>
-                    <li>Helpline</li>
-                </ul>
+                        </li>
+                        <li>seaside
+                            <ul>
+                                <li>Bilal</li>
+                                <li>Ahmad</li>
+                                <li>Arslam</li>
+                            </ul>
+                        </li>
+                        
+                         
+                    </ul>
+                </li>
+                <li>Deals</li>
+                <li>Group Tours</li>
+                <li>reviews</li>
+                <li>Helpline</li>
+            </ul>
+
+        </div>
+    </nav>
+    <div id="heading">
+        <!-- <img src="png-hINDIacover.png"/> -->
+        <h3> WELCOME TO |  INCREDIBLE</h3>
+        <h1>INDIA</h1>
+        <br/>
+        <!-- <h4>&#8964;</h4> -->
+        
+    </div>
+
+</section>
+
+<section class="material">
+    <div class="box">
+        <br/>
+        <h1>Welcome to ₹BHARAT@Yatra.com ! </h1>
+        <p>
+      Here, you will find various hoildays packages which will take you to tirth yatra, adventure trip ,seaside, heritage places 
+      etc. So, that you can view our incredible India from closure side. As, due to COVID-19 there might be chances of attack of virus so, we have ensured your safety through introducing anti-covid packages in all which include 
+      pre-screening in every stop of trip, mask,sanitizer,hand gloves etc., and first aid kit.So, that you can enjoy your trip safely and happily.
+       
+        </p>
+        <br/>
+    </div>
+</section>
+
+<section class="packages">
+    <div class="package">
+        <h1> Kedhar dham </h1>
+        
+
+    </div>
+</section>
     
-            </div>
+</body>
 
-            <br/>
-            <h1 class="heading" >WELCOME To India</h1>
-        </br>
-            <img class ="imgline" src="png-hINDIacover.png"/>  
-          </div>
 
-        <div class="maincover" >
-        <img class ="gif" src="aef038e3dee9bbe88015393216927969.gif"/> 
-      </div></div>
-        <div>
-            <p  class="Packages">
-                excrtfghvvyvvuyygyb gyyttyvybhbygyg yhuy ygyu uyguyyug yugyguyguygyu guyy gyugygygyu uyg yubhbhbyhy g ygyu yh yuyu   y uyyu ugy ughyu byyvbby y gyyttyvybhbygygyvv
-                bjnnuhuh  yugyvbhnjnuh y uyhuyhyyvb ununuyhyuuh i uhuyyybybuyu ohuuhuyhyug unbvvbbuuyuyug ygyuyuyb uygu u gyguyyg yu    ygyu yu  uygguyguy u yugyugyu  uy yu  uy yugyguyguygyuy
-                yuuyguyguygu
-            </p>
-        </div>  
-    </body>
 </html>
