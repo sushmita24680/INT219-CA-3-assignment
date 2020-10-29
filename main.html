@@ -9,19 +9,25 @@
 *{
     margin: 0;
     padding: 0;
+     box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
 }
 #background{
     width: 100%;
-    height: 100vh;
+    height: 44rem;
     background: linear-gradient(15deg,rgba(240, 239, 238, 0.281) 0%,rgba(253, 255, 250, 0.281)100%),url("torismcover.jpg") center no-repeat;
     background-size: cover;
     background-position: fixed;
     position: relative;
+    box-shadow: 0px 0px 40px 15px rgba(30, 163, 7, 0.801) ;
 
 }
 #container ul{
                 list-style:none;
                 position: fixed;
+                margin-left: 50rem;
             }
 
             #container ul li{
@@ -35,6 +41,7 @@
                 height: 50px;
                 line-height: 50px;
                 text-align: center;
+
                 float: left;
                 color:rgb(14, 13, 13);
                 font-size: 18px;
@@ -67,11 +74,21 @@
                 position: absolute;
             }
 
+            #background img{
+                margin-top: -3.1rem;
+                float: left;
+                margin-right: 1rem;
+
+            }
+
             #heading
             { width: 100%;
-             height: 39%;
+             height: 41%;
+                
                 background:linear-gradient(15deg,rgba(240, 239, 238, 0.281) 0%,rgba(253, 255, 250, 0.281)100%), url("png-hINDIacover.png") center no-repeat;
-           
+                align-items: center;
+                
+                
             }
 
             #heading h1{
@@ -82,7 +99,7 @@
                 color:#4e3418;
                 
                 /* margin-top: -10px; */
-                padding-top:18px;
+                padding-top:28px;
                 margin-left: -26px;
 
             }
@@ -91,7 +108,7 @@
                 font-family:Arial, Helvetica, sans-serif;
                 font-size:25px;
                  text-align: center; 
-                /* bottom: 108px;  */
+                
                 margin-top: 320px;
                 color:#4e3418;
                 margin-left: -50px;
@@ -103,14 +120,45 @@
                 font-family:Arial, Helvetica, sans-serif;
 
             } */
-.box{
+
+            .open{
+                margin-top: 5.79rem;
+                text-align: center;
+                
+
+            }
+
+            #open{
+                padding: 0.5px 25px 2px 25px;
+                border-radius: 50px 50px 0px 0px;
+                background-color: rgba(39, 141, 20, 0.767);
+                box-shadow: -0px -2px 3px 3px  rgba(15, 90, 3, 0.801);
+                border-style:inherit;
+               color: white;
+               font-weight: bold;
+               font-family: cursive;
+               font-size: 18px;
+                border:2px 2px 0px 0px  lawngreen;
+            }
+            .open a{
+                text-decoration: none;
+                
+            
+                
+            }
+
+            #open:hover{
+                background-color: rgba(21, 107, 6, 0.767);
+            }
+#box{
     display: block;
     padding-left: 20px;
-    margin: 40px;
+    margin: 3rem;
+   
 
 }
 
-.box h1{
+#box h1{
     border-left: 10px solid rgba(30, 163, 7, 0.801) ;
     padding:15px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -118,7 +166,7 @@
     margin-bottom: 20px;
 }
 
-.box p{
+#box p{
     border-left: 10px solid rgba(30, 163, 7, 0.801) ;
 
     border-bottom:  solid rgba(30, 163, 7, 0.801) ;
@@ -127,10 +175,236 @@
     color:rgba(142, 148, 141, 0.801);
     margin-bottom: 20px;
 }
+#packwithsub{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.subscribe{
+    border-left: 5px solid red;
+    border-radius: 0.5px 0.5px ;
+}
+.packages{
+    display:flex;
+     flex-direction: row; 
+    /* box-sizing: border-box;  */
+    flex-wrap:wrap;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    
+}
+#offers{
+    margin:2rem ;
+    padding: 17px;
+    padding-left: 27px;
+    /* border: 2px  solid black; */
+    background-image: url("offers.png");
+    background-repeat:no-repeat;
+    font-size: small;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     color: rgba(236, 8, 8, 0.63);
+     text-shadow:  #200303 0.15px 2px 2.5px;
+     
+   
+}
+
+
+.packageone{
+ display: block;
+ /* flex: 20%; */ 
+ /* grid-template-rows: fit-content(150px) fit-content(150) fit-content(40) 1.5fr; */
+ box-sizing:content-box;
+ /* border:7px solid rgb(255, 255, 255) ; */
+ box-shadow: 5px 10px #888888;
+ border-radius: 45px;
+ background:linear-gradient(108deg,rgba(20, 7, 77, 0.7) 0%,rgba(141, 25, 122, 0.603)100%) ,url("buttonsbk1.jpg") center transparent;
+ font-family: Arial, Helvetica, sans-serif;
+ /* margin:20px; */
+ height: 30rem;
+ width: 16rem;
+ margin-right: 1rem;
+ justify-content: center;
+ text-align: center;
+ /* width: 20vh; */
+ color: white;
+ 
+ margin-bottom: 40px;
+
+}
+
+.packageone h1{
+    padding-top: 1rem;
+    
+    font-family: cursive;
+    text-shadow: 2px 4px rgba(196, 211, 211, 0.452);
+    
+}
+
+.packageone img{
+    height: 13em;
+    /* text-align: center; */
+    /* align-self: center; */
+    margin-top: 15px;
+    margin-bottom: 15px; 
+    width: 16.025rem;
+    /* border-style:solid; */
+    /* border-radius: 20px ; */
 
 
 
-           
+}
+.packageone p{
+    margin: 0.5rem;
+    margin-left:1rem ;
+    border-left:5px solid red;
+    padding-left:5px;
+    text-align: left;
+    margin-right: 1rem ;
+    color: white;
+}
+
+.packageone button{
+    padding: 15px;
+    margin-top: 0rem;
+    border-radius: 35px ;
+    color:white;
+    background-color:lightcoral;
+    background-attachment: fixed;
+
+}
+.packageone button:hover{
+    background-color: red;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.packageone:hover{
+    /* height: 62vh; */
+ /* width: 21rem; */
+ /* border-color:  rgb(248, 178, 15); */
+ /* font-size: 31px; */
+ text-shadow: 0px 0px;
+ color: wheat;
+ transform: scale(1.05);
+}
+
+#subscriber{
+    margin-left: 4em;
+    background-color:white ;
+    border-radius:10px ;
+    padding:2em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center;
+    text-align:center;
+    box-shadow: 8px 10px 18px 3px rgba(139, 141, 148, 0.829);
+    padding-bottom: 4em;
+    width: 24em;
+    height: 30em;
+    box-sizing:border-box;
+
+}
+
+#subscriber img{
+   width: 200px;
+}
+
+#subscriber h1{
+    padding: 0.25em;
+    font-size: 30px;
+    border-left:10px solid rgb(54, 16, 224);
+}
+#subscriber p{
+    padding: 1em;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:25px;
+}
+#subscriber input{
+   margin: 1rem;
+   margin-top: 2rem;
+   border-radius: 30px 30px;
+   border: 5px solid  rgba(4, 29, 110, 0.993);
+   width: 18rem;
+   height: 3rem;
+   font-size: 30px;
+}
+
+#subscriber button{
+    padding: 12px 40px ;
+    margin-top: 1rem;
+    background:linear-gradient(15deg,rgb(241, 16, 110) 0%,rgb(33, 8, 90)100%);
+    border:2px solid  rgba(28, 8, 119, 0.63);
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+}
+#subscriber button:hover{
+    transform: scale(1.15);
+}  
+
+#aboutus{
+ margin:3em;
+ /* transform: ; */
+ padding:1rem;
+}
+
+#aboutus h1{
+    border-left: 12px solid red;
+    /* border-bottom: 4px solid red; */
+    font-family:monospace;
+    font-size: 35px;
+    padding: 12px;
+    margin-bottom: 1em;
+    font-weight:bold;
+    /* font-stretch:narrower; */
+    
+    text-shadow: #554a4a 0.15px 2px 2.5px;
+    }
+    #aboutus p{
+        padding-left: 900px;
+        padding-right: 100px;
+        padding-inline-end: 10px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 22px;
+        color:grey;
+        
+    padding-left:15px;
+    border-left: 12px solid red;
+    }
+
+    #contactus{
+    
+       background:  linear-gradient(108deg,rgba(50, 50, 51, 0.5) 0%,rgba(126, 131, 79, 0.5)100%) ,url("contactus.jpg") no-repeat transparent;
+       background-size: cover;
+       width: 100%;
+       height: 20rem;
+       padding: 2rem;
+       color: white;
+       padding-left:5rem;
+       
+    }
+    #contactus ul{
+       list-style: none;
+
+       
+    }
+
+    #contactus ul li{
+       text-align:center; 
+       float: left;
+       padding-top:2rem ;
+       margin-left: 6rem; 
+       width: 22%;
+       
+    }
+    .contactusbox p{
+        
+    }
+
+
+
 </style>
 
 
@@ -139,11 +413,12 @@
 <body>
 <section id ="background">
     <marquee class="ad" style = "border:2px deeppink solid ;background-color:deeppink; color:ghostwhite;" behavior ="alternate"><b>welcome to ₹BHARAT@Yatra.com - TourtoIndia</b></marquee>    
-
+    <img src="logo1.png"/>
     <nav>
         <div id = "container">
+            
             <ul>
-                <li>Home</li>
+                <a href="#background"><li>Home</li></a>
                 <li>Custom Packages
                     <ul>
                         <li>Adventure
@@ -163,12 +438,12 @@
                          
                     </ul>
                 </li>
-                <li>Deals</li>
-                <li>Group Tours</li>
-                <li>reviews</li>
-                <li>Helpline</li>
+                <li>Transport</li>
+                <li>About us</li>
+                <li>Contact us</li>
+                <li>Feedback</li>
             </ul>
-
+        
         </div>
     </nav>
     <div id="heading">
@@ -178,12 +453,15 @@
         <br/>
         <!-- <h4>&#8964;</h4> -->
         
+    </div >
+    <div class="open">
+        <a href="#box"> <button id="open" >^<br/>Open</button></a>
     </div>
 
 </section>
 
 <section class="material">
-    <div class="box">
+    <div id="box">
         <br/>
         <h1>Welcome to ₹BHARAT@Yatra.com ! </h1>
         <p>
@@ -195,16 +473,88 @@
         <br/>
     </div>
 </section>
-
+<!-- <section id="packwithsub"> -->
+    <div id="offers"><h1>Offers:</h1></div>
 <section class="packages">
-    <div class="package">
-        <h1> Kedhar dham </h1>
-        
+    
+    <div class="packageone">
+        <h1> Kedhar Dham </h1>
+        <img src="kedarnath_3.jpg"/>
+        <p>Kedarnath is a holy Hindu town located in Rudraprayag district of Uttarakhand in India. It is one of the Char Dhams located in the Himalayas</p>
+        <button>BOOK NOW</button>
 
     </div>
-</section>
     
-</body>
+     <div class="packageone">
+         <h1>Goa Beach</h1>
+         <img src="beach_in_Goa_1511335579.webp"/>
+        <p>Goa, is the perfect destination for a refreshing break
+             from your routine life. Here , you will view meeting of sun and Arabian sea every sunset at beachside.  </p>
+        <button>BOOK NOW</button>
+    </div>
+    <div class="packageone">
+        <h1>City Of Marbles</h1>
+        <img src="Jabalpur.jpg"/>
+        <p>City of Marbles(Jabalpur) stepped to ancient places and nature charm - Madan Mahal Fort, Gwari Ghat, Tilwara Ghat, Dhuandhar Waterfalls  and many more.</p>
+        <button>BOOK NOW</button>    
+    </div>
+<!-- </section>
+<section class="subscribe"> -->
+<div id="subscriber">
+    <img src="subscribe.jpg"/>
+    <h1>SUBSCRIBE NOW</h1>
+    <P>subscribe to get our latest updates!
+        <br/>
+        And checkout upcomming new packages with discount offers.
+    </P>
+    <form>
+    <label for="email"></label>
+    <input type="email" placeholder="email" id="email" size="25" maxlength="40" />
+    <button>Submit</button>
+</form>
 
+</div>
+
+</section>
+<section id="aboutus">
+    <h1>About us</h1>
+   <p> <b>Bharat@yatra.com- Tour to India </b>is a tour and traveling site. We full fill the needs of those people who are planning a trip to historical places, adventures, and pilgrims in India.
+<br/><br/>
+    We will provide great experience and adventure on selecting any tour Packages with a covid safety kit. Our theme is to show <b>"Incredible Tradition and Culture of India"</b>.
+    <br/><br/>
+    We will introduce every tradition and culture of the selected destination and conduct some interesting events for you to make your entire trip memorable and beautiful.
+    <br/><br/>
+    Our team consists of highly accomplished and experienced adventurers who have done anything that one could imagine from traveling to the North and South Poles.
+    </p> 
+</section>
+<section id="contactus">
+    <h1>Contact us</h1>
+    <h2>Have a query for us ? Get in touch with our customer service:</h2>
+    <ul>
+        <li><div class="contactusbox">
+            <h3>Dial </h3>
+            <h3>24567893479</h3>
+            <p>We are on call from 10:00 am - 09:00 pm,
+                 from Monday to Saturday and 10:00 am- 07:00 pm, on Sunday</p>
+                </div>
+        </li>
+        <li> <div class="contactusbox">
+             <h3>Email Us</h3>
+                 <h3>servicecenterbharat@yatra.com</h3>
+                 </div>
+        </li>
+        <li>    <div class="contactusbox">  
+               <h3> Head Office</h3>
+                <p>BharatYatra Network Private Limited Gulf Adiba,
+                     Plot No. 272, Phase II, Sector 20, Gurugram, Haryana 122008
+                 
+                </p>
+                </div>
+        </li>
+    </ul>
+</section>
+    </section>
+</body>
+ 
 
 </html>
