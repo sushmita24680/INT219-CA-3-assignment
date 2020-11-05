@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TourtoIndia</title>
+    
 </head>
 <style type="text/css">
 *{
     margin: 0;
     padding: 0;
-     box-sizing: border-box;
+      box-sizing: border-box; 
 }
 html{
     scroll-behavior: smooth;
@@ -17,22 +18,27 @@ html{
 #background{
     width: 100%;
     height: 44rem;
-    background: linear-gradient(15deg,rgba(240, 239, 238, 0.281) 0%,rgba(253, 255, 250, 0.281)100%),url("torismcover.jpg") center no-repeat;
+    background: linear-gradient(15deg,rgba(243, 246, 243, 0.24) 0%,rgba(161, 179, 150, 0.507)100%),url("main/torismcover.jpg") center no-repeat;
     background-size: cover;
     background-position: fixed;
     position: relative;
     box-shadow: 0px 0px 40px 15px rgba(30, 163, 7, 0.801) ;
 
 }
+#container {
+     margin-left: 50rem;
+    
+}
 #container ul{
                 list-style:none;
                 position: fixed;
-                margin-left: 50rem;
+               
             }
 
             #container ul li{
            
                 background:linear-gradient(15deg,rgba(240, 239, 238, 0.281) 0%,rgba(253, 255, 250, 0.281)100%) ,transparent;
+              
                padding-left: 15px;
                padding-right:15px ;
                margin-left: 5px;
@@ -50,7 +56,7 @@ html{
                 position:relative;
             }
             #container ul li:hover {
-                background-image:url('buttonsbk1.jpg');
+                background-image:url('main/buttonsbk1.jpg');
             color: whitesmoke;
             }
             
@@ -60,7 +66,7 @@ html{
             }
             #container ul ul li{
                 width:120px;
-                margin-left:-12px;
+                margin-left:-20px;
             }
             #container ul li:hover > ul{
                 display:block;
@@ -75,7 +81,7 @@ html{
             }
 
             #background img{
-                margin-top: -3.1rem;
+                margin-top: -2.8rem;
                 float: left;
                 margin-right: 1rem;
 
@@ -83,10 +89,13 @@ html{
 
             #heading
             { width: 100%;
-             height: 41%;
-                
-                background:linear-gradient(15deg,rgba(240, 239, 238, 0.281) 0%,rgba(253, 255, 250, 0.281)100%), url("png-hINDIacover.png") center no-repeat;
-                align-items: center;
+             height: 95%;
+                top:0;
+                padding-top:17px ;
+                background:linear-gradient(15deg,rgba(255, 255, 251, 0.082) 0%,rgba(255, 255, 255, 0.507)100%), url("main/png-hINDIacover.png") center no-repeat;
+                /*  align-items: center; */
+                /* justify-content: center; */
+                position:initial;
                 
                 
             }
@@ -101,6 +110,7 @@ html{
                 /* margin-top: -10px; */
                 padding-top:28px;
                 margin-left: -26px;
+                position: relative;
 
             }
 
@@ -109,9 +119,10 @@ html{
                 font-size:25px;
                  text-align: center; 
                 
-                margin-top: 320px;
+                margin-top: 215px;
                 color:#4e3418;
                 margin-left: -50px;
+                position: relative;
 
             }
             /* #heading h4{
@@ -122,10 +133,10 @@ html{
             } */
 
             .open{
-                margin-top: 5.79rem;
-                text-align: center;
+                 margin-left: 46%; 
+                /* justify-content: center; */
+                margin-top: -44px;
                 
-
             }
 
             #open{
@@ -139,6 +150,7 @@ html{
                font-family: cursive;
                font-size: 18px;
                 border:2px 2px 0px 0px  lawngreen;
+                /* position: absolute; */
             }
             .open a{
                 text-decoration: none;
@@ -168,9 +180,35 @@ html{
 
 #box p{
     border-left: 10px solid rgba(30, 163, 7, 0.801) ;
-
+    font-size: 22px;
     border-bottom:  solid rgba(30, 163, 7, 0.801) ;
+    padding:25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgba(142, 148, 141, 0.801);
+    margin-bottom: 20px;
+}
+
+#box2{
+    display: block;
+    padding-left: 20px;
+    margin: 3rem;
+   
+
+}
+
+#box2 h1{
+    border-left: 10px solid rgba(238, 12, 12, 0.801) ;
     padding:15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgba(163, 7, 7, 0.801);
+    margin-bottom: 20px;
+}
+
+#box2 p{
+    border-left: 10px solid rgba(238, 12, 12, 0.801) ;
+    font-size: 22px;
+    border-bottom:  solid rgba(238, 12, 12, 0.801) ;
+    padding:25px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color:rgba(142, 148, 141, 0.801);
     margin-bottom: 20px;
@@ -199,7 +237,7 @@ html{
     padding: 17px;
     padding-left: 27px;
     /* border: 2px  solid black; */
-    background-image: url("offers.png");
+    background-image: url("main/offers.png");
     background-repeat:no-repeat;
     font-size: small;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -218,7 +256,7 @@ html{
  /* border:7px solid rgb(255, 255, 255) ; */
  box-shadow: 5px 10px #888888;
  border-radius: 45px;
- background:linear-gradient(108deg,rgba(20, 7, 77, 0.7) 0%,rgba(141, 25, 122, 0.603)100%) ,url("buttonsbk1.jpg") center transparent;
+ background:linear-gradient(108deg,rgba(20, 7, 77, 0.7) 0%,rgba(141, 25, 122, 0.603)100%) ,url("main/buttonsbk1.jpg") center transparent;
  font-family: Arial, Helvetica, sans-serif;
  /* margin:20px; */
  height: 30rem;
@@ -376,10 +414,10 @@ html{
 
     #contactus{
     
-       background:  linear-gradient(108deg,rgba(50, 50, 51, 0.5) 0%,rgba(126, 131, 79, 0.5)100%) ,url("contactus.jpg") no-repeat transparent;
+       background:  linear-gradient(108deg,rgba(50, 50, 51, 0.5) 0%,rgba(126, 131, 79, 0.5)100%) ,url("MAIN/contactus.jpg") no-repeat transparent;
        background-size: cover;
-       width: 100%;
-       height: 20rem;
+       width: 92%;
+       height: 12rem;
        padding: 2rem;
        color: white;
        padding-left:5rem;
@@ -398,22 +436,105 @@ html{
        margin-left: 6rem; 
        width: 22%;
        
-    }
-    .contactusbox p{
+    }                                   
+    /* .contactusbox p{
         
+    } */
+
+    /* Button used to open the contact form - fixed at the bottom of the page */
+/* .open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+} */
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  top:0;
+ left:35em;
+ margin-top: 300px;
+padding:20px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover{
+  opacity: 1;
+}
+    .close{
+        position:absolute;
+        top:0;
+        right:14px;
+        font-size: 42px;
+        transform: rotate(45deg); 
+     
+        /* position: fixed;     */
     }
+   .open-button{
+    cursor: pointer; 
+   }
 
 
 
 </style>
-
+ 
 
 
 
 <body>
+   
 <section id ="background">
     <marquee class="ad" style = "border:2px deeppink solid ;background-color:deeppink; color:ghostwhite;" behavior ="alternate"><b>welcome to ₹BHARAT@Yatra.com - TourtoIndia</b></marquee>    
-    <img src="logo1.png"/>
+    <img src="main/logo1.png"/>
     <nav>
         <div id = "container">
             
@@ -423,15 +544,20 @@ html{
                     <ul>
                         <li>Adventure
                         <ul>
-                            <li>Manali</li>
-                            <li>Pangonge</li>
+                            <a href="Manali.html"><li>Manali</li></a>
+                            <li>Goa beach</li>
                         </ul>
                         </li>
+                        <li> Piligrams
+                            <ul>
+                                <li>Kedar Dham</li>
+                                <li>Buddha</li>
+                            </ul>
                         <li>seaside
                             <ul>
-                                <li>Bilal</li>
-                                <li>Ahmad</li>
-                                <li>Arslam</li>
+                                <li>Rajasthan</li>
+                                <li>Jabalpur</li>
+                                
                             </ul>
                         </li>
                         
@@ -439,9 +565,9 @@ html{
                     </ul>
                 </li>
                 <li>Transport</li>
-                <li>About us</li>
-                <li>Contact us</li>
-                <li>Feedback</li>
+                <a href="#aboutus"><li>About us</li></a>
+                <a href="#contactus"><li>Contact us</li></a>
+               <li class="open-button" onclick="openForm()" >Feedback</li>
             </ul>
         
         </div>
@@ -472,6 +598,20 @@ html{
         </p>
         <br/>
     </div>
+
+    <div id="box2">
+        <br/>
+        <h1>Important Guidelines for Travelers </h1>
+        <p>
+      All Travelers must have COVID-19 test certification
+      Identification proof like pancard , adhaarcard etc.
+      Travalling form which will be mailed by our service team respectively.
+      
+
+        </p>
+        <br/>
+    </div>
+
 </section>
 <!-- <section id="packwithsub"> -->
     <div id="offers"><h1>Offers:</h1></div>
@@ -479,7 +619,7 @@ html{
     
     <div class="packageone">
         <h1> Kedhar Dham </h1>
-        <img src="kedarnath_3.jpg"/>
+        <img src="main/kedarnath_3.jpg"/>
         <p>Kedarnath is a holy Hindu town located in Rudraprayag district of Uttarakhand in India. It is one of the Char Dhams located in the Himalayas</p>
         <button>BOOK NOW</button>
 
@@ -487,21 +627,21 @@ html{
     
      <div class="packageone">
          <h1>Goa Beach</h1>
-         <img src="beach_in_Goa_1511335579.webp"/>
+         <img src="main/beach_in_Goa_1511335579.webp"/>
         <p>Goa, is the perfect destination for a refreshing break
              from your routine life. Here , you will view meeting of sun and Arabian sea every sunset at beachside.  </p>
         <button>BOOK NOW</button>
     </div>
     <div class="packageone">
         <h1>City Of Marbles</h1>
-        <img src="Jabalpur.jpg"/>
+        <img src="main/Jabalpur.jpg"/>
         <p>City of Marbles(Jabalpur) stepped to ancient places and nature charm - Madan Mahal Fort, Gwari Ghat, Tilwara Ghat, Dhuandhar Waterfalls  and many more.</p>
         <button>BOOK NOW</button>    
     </div>
 <!-- </section>
 <section class="subscribe"> -->
 <div id="subscriber">
-    <img src="subscribe.jpg"/>
+    <img src="main/subscribe.jpg"/>
     <h1>SUBSCRIBE NOW</h1>
     <P>subscribe to get our latest updates!
         <br/>
@@ -519,10 +659,11 @@ html{
 <section id="aboutus">
     <h1>About us</h1>
    <p> <b>Bharat@yatra.com- Tour to India </b>is a tour and traveling site. We full fill the needs of those people who are planning a trip to historical places, adventures, and pilgrims in India.
+As we all knew that India is an incredible country and every single place has its specialty in it. And, due to which it attracts lots of tourists. But, the benefit of choosing our site is you will find a package at a reasonable rate with some discount, historical magazine containing story which becomes a reason for the popularity of that area and entertainment. 
 <br/><br/>
     We will provide great experience and adventure on selecting any tour Packages with a covid safety kit. Our theme is to show <b>"Incredible Tradition and Culture of India"</b>.
     <br/><br/>
-    We will introduce every tradition and culture of the selected destination and conduct some interesting events for you to make your entire trip memorable and beautiful.
+    We will introduce every tradition and culture of the selected destination and conduct some exciting events for you to make your entire trip memorable and beautiful.
     <br/><br/>
     Our team consists of highly accomplished and experienced adventurers who have done anything that one could imagine from traveling to the North and South Poles.
     </p> 
@@ -554,6 +695,38 @@ html{
     </ul>
 </section>
     </section>
+
+    <!-- div for feedback -->
+            <div class="form-popup" id="myForm">
+                <form action="/action_page.php" class="form-container">
+                  <h1>feedback</h1>
+              <div  type="button" class="close" onclick="closeForm()">
+                +
+            </div>
+                  <label for="email"><b>Email</b></label>
+                  <input type="text" placeholder="Enter Email" name="email" required>
+              
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+               <textarea name="comments" cols="20" rows="4" >Enter your comments...</textarea>
+                  <button type="submit" class="btn">submit</button>
+                  <!-- <>Close</button> -->
+                </form>
+              </div>
+              
+              
+    <footer>
+       <div><P><center>&COPY; 2020 BharatYatra Network Private Limited . All rights reserved.</center></P></div>
+    </footer>
+    <script>
+              function openForm() {
+                document.getElementById("myForm").style.display = "block";
+              }
+              
+              function closeForm() {
+                document.getElementById("myForm").style.display = "none";
+              }
+              </script>
 </body>
  
 
