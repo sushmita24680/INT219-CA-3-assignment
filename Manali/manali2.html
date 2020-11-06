@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manali-booking site</title>
+<link rel="stylesheet" type="text/css" href="manali2.css" />
+</head>
+<body id="background2">
+    
+    <img src="../Main/logo1.png"/>
+    
+        <nav>  
+            <div id = "container">
+                
+                <ul>
+                    <a href="../main.html#background"><li>Home</li></a>
+                    <li>Custom Packages
+                        <ul>
+                            <li>Adventure
+                            <ul>
+                                <li>Manali</li>
+                                <li>Pangonge</li>
+                            </ul>
+                            </li>
+                            <li>seaside
+                                <ul>
+                                    <li>Bilal</li>
+                                    <li>Ahmad</li>
+                                    <li>Arslam</li>
+                                </ul>
+                            </li>
+                            
+                             
+                        </ul>
+                    </li>
+                    <li>Transport</li>
+                    <a href="../main.html#aboutus"><li>About us</li></a>
+                    <a href="../main.html#contactus"><li>Contact us</li></a>
+                    <a href="../main.html#feedbutton"><li>Feedback</li></a>
+                </ul>
+            
+            </div>
+        </nav>
+        <div id="heading">
+        <h3>WELCOME TO</h3>
+        <h3><span>MANALI</span> - Tour Packages</h3></div>
+        <section id="sections" >
+        <div id="info">
+         
+           <section class="text-gray-700 body-font">
+               <div class="slideshow-container">
+<div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+            <div class="mySlides fade">
+                
+              <div class="numbertext">1 / 6</div>
+              <img src="leh-to-manali-hd.jpg" style="width:100%">
+            
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 6</div>
+              <img src="parasuit.jpg" style="width:100%">
+              
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 6</div>
+                <img src="manaliactivities.jpg" style="width:100%">
+               
+              </div>
+              <div class="mySlides fade">
+                <div class="numbertext">4 / 6</div>
+                <img src="Basic-Mountaineering.jpg" style="width:100%">
+                
+              </div>
+              <div class="mySlides fade">
+                <div class="numbertext"> 5 / 6</div>
+                <img src="camping-package-tour-manali.jpg" style="width:100%">
+                
+              </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">6 / 6</div>
+              <img src="manali2.jpg" style="width:100%">
+              
+            </div>
+            
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div id="activitylist">
+                            <h1> Activities</h1>
+                <ul>
+                <li class="texts" onclick="currentSlide(1)"> Biking</li> 
+                <li class="texts" onclick="currentSlide(2)"> Paragliding</li> 
+                <li class="texts" onclick="currentSlide(3)">Ropeway(Solang_valley)</li> 
+                <li class="texts" onclick="currentSlide(4)"> Mountaineering</li> 
+                <li class="texts" onclick="currentSlide(5)"> Outside_Camping</li> 
+                <li class="texts" onclick="currentSlide(6)">Skking</li> 
+                </ul>  </div>
+            
+            </div>
+            
+         
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+              <span class="dot" onclick="currentSlide(4)"></span> 
+              <span class="dot" onclick="currentSlide(5)"></span> 
+              <span class="dot" onclick="currentSlide(6)"></span> 
+            </div>
+            
+              </div>
+            
+              </div>
+            </div>
+          <div id="map">
+            <iframe 
+            src="https://www.google.com/search?q=delhi+to+manali&oq=delhi+manali+&aqs=chrome.1.69i57j0i7i30l7.27363j0j7&sourceid=chrome&ie=UTF-8#"></iframe>
+        
+            
+                
+            </div> 
+            
+        
+        <!-- <div>
+            <h1> hotels</h1>
+        </div>
+        <div> facilities</div>
+        <div>
+            <h1>Advance Booking--</h1>
+        </div>
+        <div>
+            <h1>Take Expert advise</h1>
+        </div>
+</div> -->
+</section>
+    </section>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          
+        }
+
+          </script> 
+</body>
+</html>

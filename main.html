@@ -15,20 +15,27 @@
 html{
     scroll-behavior: smooth;
 }
+body{
+    display:initial;
+}
 #background{
     width: 100%;
     height: 44rem;
-    background: linear-gradient(15deg,rgba(243, 246, 243, 0.24) 0%,rgba(161, 179, 150, 0.507)100%),url("main/torismcover.jpg") center no-repeat;
+    
+    background: url("main/torismcover.jpg") center no-repeat;
     background-size: cover;
     background-position: fixed;
     position: relative;
     box-shadow: 0px 0px 40px 15px rgba(30, 163, 7, 0.801) ;
-
-}
-#container {
-     margin-left: 50rem;
     
 }
+#container {
+     margin-left: 52%;
+
+}
+
+
+
 #container ul{
                 list-style:none;
                 position: fixed;
@@ -39,9 +46,9 @@ html{
            
                 background:linear-gradient(15deg,rgba(240, 239, 238, 0.281) 0%,rgba(253, 255, 250, 0.281)100%) ,transparent;
               
-               padding-left: 15px;
+               padding-left: 20px;
                padding-right:15px ;
-               margin-left: 5px;
+               margin-left: 10px;
                 border-radius: 20px;
                 box-shadow:   2px 3px gainsboro;
                 height: 50px;
@@ -66,7 +73,8 @@ html{
             }
             #container ul ul li{
                 width:120px;
-                margin-left:-20px;
+                margin-left:-12px;
+               
             }
             #container ul li:hover > ul{
                 display:block;
@@ -75,7 +83,7 @@ html{
                 
             }
             #container ul ul ul{
-                margin-left:148px;
+                margin-left:113px;
                 top:0px;
                 position: absolute;
             }
@@ -278,8 +286,28 @@ html{
     text-shadow: 2px 4px rgba(196, 211, 211, 0.452);
     
 }
+.packageone .offer{
+    width: 2px;
+    height: 2px;
+    transform: scale(0.101);
+    margin-left: 12.6rem;
+    position: absolute;
+    margin-top: -4px;
+    
+ 
 
-.packageone img{
+}
+.packageone .discount{
+   
+    position: relative;
+    font-weight: bold;
+    font-size: 10rem;
+    margin-top: -30rem;
+    margin-left: 15rem;
+    
+}
+
+.packageone .pic{
     height: 13em;
     /* text-align: center; */
     /* align-self: center; */
@@ -416,12 +444,14 @@ html{
     
        background:  linear-gradient(108deg,rgba(50, 50, 51, 0.5) 0%,rgba(126, 131, 79, 0.5)100%) ,url("MAIN/contactus.jpg") no-repeat transparent;
        background-size: cover;
-       width: 92%;
-       height: 12rem;
-       padding: 2rem;
+       width: 100%;
+       height: 12%;
+       padding-top: 1rem;
        color: white;
        padding-left:5rem;
-       
+       margin-bottom: 10px;
+       display: flex;
+       flex-direction: column;
     }
     #contactus ul{
        list-style: none;
@@ -436,35 +466,26 @@ html{
        margin-left: 6rem; 
        width: 22%;
        
-    }                                   
-    /* .contactusbox p{
-        
-    } */
-
-    /* Button used to open the contact form - fixed at the bottom of the page */
-/* .open-button {
-  background-color: #555;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  opacity: 0.8;
-  position: fixed;
-  bottom: 23px;
-  right: 28px;
-  width: 280px;
-} */
+    }   
+    .footer{
+        position: relative;
+        text-align: center;
+        bottom: 0;
+    }                                
+    
 
 /* The popup form - hidden by default */
 .form-popup {
   display: none;
   position: fixed;
   top:0;
- left:35em;
- margin-top: 300px;
+ left:40%;
+ margin-top:13rem;
 padding:20px;
   border: 3px solid #f1f1f1;
   z-index: 9;
+
+
 }
 
 /* Add styles to the form container */
@@ -522,7 +543,17 @@ padding:20px;
    .open-button{
     cursor: pointer; 
    }
-
+   #feedbkgd{
+      
+    background: linear-gradient(15deg,rgb(62, 73, 62) 0%,rgb(72, 88, 71)100%);
+    /* display: initial; */
+    width: 100%;
+    height: 44rem;
+    top:0;
+     position:fixed;
+     opacity: 0.8;
+     display: none;
+   }
 
 
 </style>
@@ -531,11 +562,12 @@ padding:20px;
 
 
 <body>
+    <section id="body">
    
 <section id ="background">
     <marquee class="ad" style = "border:2px deeppink solid ;background-color:deeppink; color:ghostwhite;" behavior ="alternate"><b>welcome to ₹BHARAT@Yatra.com - TourtoIndia</b></marquee>    
-    <img src="main/logo1.png"/>
-    <nav>
+  
+    <nav>  <img src="main/logo1.png"/>
         <div id = "container">
             
             <ul>
@@ -544,16 +576,16 @@ padding:20px;
                     <ul>
                         <li>Adventure
                         <ul>
-                            <a href="Manali.html"><li>Manali</li></a>
+                            <a href="manali/Manali.html"><li>Manali</li></a>
                             <li>Goa beach</li>
                         </ul>
                         </li>
                         <li> Piligrams
                             <ul>
-                                <li>Kedar Dham</li>
+                                <li>KedarDham</li>
                                 <li>Buddha</li>
                             </ul>
-                        <li>seaside
+                        <li>Heritage
                             <ul>
                                 <li>Rajasthan</li>
                                 <li>Jabalpur</li>
@@ -585,7 +617,7 @@ padding:20px;
     </div>
 
 </section>
-
+<div id="feedbkgd"></div> 
 <section class="material">
     <div id="box">
         <br/>
@@ -618,23 +650,27 @@ padding:20px;
 <section class="packages">
     
     <div class="packageone">
-        <h1> Kedhar Dham </h1>
-        <img src="main/kedarnath_3.jpg"/>
+          <div class="offer"> <img src="main/offersticker.png"/> <div class="discount"><p>10%</p></div></div>
+          <h1> Kedhar Dham </h1>
+     
+        <img class="pic" src="main/kedarnath_3.jpg"/>
         <p>Kedarnath is a holy Hindu town located in Rudraprayag district of Uttarakhand in India. It is one of the Char Dhams located in the Himalayas</p>
         <button>BOOK NOW</button>
 
     </div>
     
      <div class="packageone">
-         <h1>Goa Beach</h1>
-         <img src="main/beach_in_Goa_1511335579.webp"/>
+        <div class="offer"> <img src="main/offersticker.png"/> <div class="discount"><p style="padding-left:5rem ;"> 5%</p></div></div> 
+        <h1>Goa Beach</h1>
+         <img class="pic" src="main/beach_in_Goa_1511335579.webp"/>
         <p>Goa, is the perfect destination for a refreshing break
              from your routine life. Here , you will view meeting of sun and Arabian sea every sunset at beachside.  </p>
         <button>BOOK NOW</button>
     </div>
     <div class="packageone">
+        <div class="offer"> <img src="main/offersticker.png"/> <div class="discount"><p>12%</p></div></div>
         <h1>City Of Marbles</h1>
-        <img src="main/Jabalpur.jpg"/>
+        <img class="pic" src="main/Jabalpur.jpg"/>
         <p>City of Marbles(Jabalpur) stepped to ancient places and nature charm - Madan Mahal Fort, Gwari Ghat, Tilwara Ghat, Dhuandhar Waterfalls  and many more.</p>
         <button>BOOK NOW</button>    
     </div>
@@ -689,14 +725,20 @@ As we all knew that India is an incredible country and every single place has it
                 <p>BharatYatra Network Private Limited Gulf Adiba,
                      Plot No. 272, Phase II, Sector 20, Gurugram, Haryana 122008
                  
-                </p>
-                </div>
+                </p></div>
+                
         </li>
-    </ul>
+    </ul> 
+    <br/><br/><br/>
 </section>
-    </section>
+<section class="footer">
+       <div ><P>&COPY; 2020 BharatYatra Network Private Limited . All rights reserved.</P></div>
+</section>
 
+    </section>
+</section>
     <!-- div for feedback -->
+   
             <div class="form-popup" id="myForm">
                 <form action="/action_page.php" class="form-container">
                   <h1>feedback</h1>
@@ -715,16 +757,22 @@ As we all knew that India is an incredible country and every single place has it
               </div>
               
               
-    <footer>
-       <div><P><center>&COPY; 2020 BharatYatra Network Private Limited . All rights reserved.</center></P></div>
-    </footer>
+    
     <script>
+               
+
               function openForm() {
                 document.getElementById("myForm").style.display = "block";
+              document.getElementById("feedbkgd").style.display = "initial";
+   
+
+        
               }
               
               function closeForm() {
                 document.getElementById("myForm").style.display = "none";
+              
+                document.getElementById("feedbkgd").style.display="none";
               }
               </script>
 </body>
