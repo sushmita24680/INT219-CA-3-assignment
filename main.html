@@ -4,565 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TourtoIndia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="main/validation.css"/>
+    <script src="signupValidation.js"></script>
+    <script src="signinValidation.js"></script>
     
+    <script>
+        $(document).ready(function(){
+  $(".login").hide();
+$(".signup_li").addClass("active");
+
+$(".login_li").click(function(){
+  $(this).addClass("active");
+  $(".signup_li").removeClass("active");
+  $(".login").show();
+   $(".signup").hide();
+});
+
+
+$(".signup_li").click(function(){
+  $(this).addClass("active");
+  $(".login_li").removeClass("active");
+  $(".signup").show();
+   $(".login").hide();
+});
+});</script>
+  
 </head>
-<style type="text/css">
-*{
-    margin: 0;
-    padding: 0;
-      box-sizing: border-box; 
-}
-html{
-    scroll-behavior: smooth;
-}
-body{
-    display:initial;
-}
-#background{
-    width: 100%;
-    height: 44rem;
-    
-    background: url("main/torismcover.jpg") center no-repeat;
-    background-size: cover;
-    background-position: fixed;
-    position: relative;
-    box-shadow: 0px 0px 40px 15px rgba(30, 163, 7, 0.801) ;
-    
-}
-#container {
-     margin-left: 52%;
-
-}
-
-
-
-#container ul{
-                list-style:none;
-                position: fixed;
-               
-            }
-
-            #container ul li{
-           
-                background:linear-gradient(15deg,rgba(240, 239, 238, 0.281) 0%,rgba(253, 255, 250, 0.281)100%) ,transparent;
-              
-               padding-left: 20px;
-               padding-right:15px ;
-               margin-left: 10px;
-                border-radius: 20px;
-                box-shadow:   2px 3px gainsboro;
-                height: 50px;
-                line-height: 50px;
-                text-align: center;
-
-                float: left;
-                color:rgb(14, 13, 13);
-                font-size: 18px;
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                font-style: bold;
-                position:relative;
-            }
-            #container ul li:hover {
-                background-image:url('main/buttonsbk1.jpg');
-            color: whitesmoke;
-            }
-            
-            #container ul ul{
-                display:none;
-               
-            }
-            #container ul ul li{
-                width:120px;
-                margin-left:-12px;
-               
-            }
-            #container ul li:hover > ul{
-                display:block;
-                width:150px;
-                position:absolute;
-                
-            }
-            #container ul ul ul{
-                margin-left:113px;
-                top:0px;
-                position: absolute;
-            }
-
-            #background img{
-                margin-top: -2.8rem;
-                float: left;
-                margin-right: 1rem;
-
-            }
-
-            #heading
-            { width: 100%;
-             height: 95%;
-                top:0;
-                padding-top:17px ;
-                background:linear-gradient(15deg,rgba(255, 255, 251, 0.082) 0%,rgba(255, 255, 255, 0.507)100%), url("main/png-hINDIacover.png") center no-repeat;
-                /*  align-items: center; */
-                /* justify-content: center; */
-                position:initial;
-                
-                
-            }
-
-            #heading h1{
-                font-family:Arial, Helvetica, sans-serif;
-                font-size: 150px;
-                text-align: center;
-                top: 0;
-                color:#4e3418;
-                
-                /* margin-top: -10px; */
-                padding-top:28px;
-                margin-left: -26px;
-                position: relative;
-
-            }
-
-            #heading h3{
-                font-family:Arial, Helvetica, sans-serif;
-                font-size:25px;
-                 text-align: center; 
-                
-                margin-top: 215px;
-                color:#4e3418;
-                margin-left: -50px;
-                position: relative;
-
-            }
-            /* #heading h4{
-                font-size: 200px;
-                color: white;
-                font-family:Arial, Helvetica, sans-serif;
-
-            } */
-
-            .open{
-                 margin-left: 46%; 
-                /* justify-content: center; */
-                margin-top: -44px;
-                
-            }
-
-            #open{
-                padding: 0.5px 25px 2px 25px;
-                border-radius: 50px 50px 0px 0px;
-                background-color: rgba(39, 141, 20, 0.767);
-                box-shadow: -0px -2px 3px 3px  rgba(15, 90, 3, 0.801);
-                border-style:inherit;
-               color: white;
-               font-weight: bold;
-               font-family: cursive;
-               font-size: 18px;
-                border:2px 2px 0px 0px  lawngreen;
-                /* position: absolute; */
-            }
-            .open a{
-                text-decoration: none;
-                
-            
-                
-            }
-
-            #open:hover{
-                background-color: rgba(21, 107, 6, 0.767);
-            }
-#box{
-    display: block;
-    padding-left: 20px;
-    margin: 3rem;
-   
-
-}
-
-#box h1{
-    border-left: 10px solid rgba(30, 163, 7, 0.801) ;
-    padding:15px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color:rgba(30, 163, 7, 0.801);
-    margin-bottom: 20px;
-}
-
-#box p{
-    border-left: 10px solid rgba(30, 163, 7, 0.801) ;
-    font-size: 22px;
-    border-bottom:  solid rgba(30, 163, 7, 0.801) ;
-    padding:25px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color:rgba(142, 148, 141, 0.801);
-    margin-bottom: 20px;
-}
-
-#box2{
-    display: block;
-    padding-left: 20px;
-    margin: 3rem;
-   
-
-}
-
-#box2 h1{
-    border-left: 10px solid rgba(238, 12, 12, 0.801) ;
-    padding:15px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color:rgba(163, 7, 7, 0.801);
-    margin-bottom: 20px;
-}
-
-#box2 p{
-    border-left: 10px solid rgba(238, 12, 12, 0.801) ;
-    font-size: 22px;
-    border-bottom:  solid rgba(238, 12, 12, 0.801) ;
-    padding:25px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color:rgba(142, 148, 141, 0.801);
-    margin-bottom: 20px;
-}
-#packwithsub{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.subscribe{
-    border-left: 5px solid red;
-    border-radius: 0.5px 0.5px ;
-}
-.packages{
-    display:flex;
-     flex-direction: row; 
-    /* box-sizing: border-box;  */
-    flex-wrap:wrap;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    
-}
-#offers{
-    margin:2rem ;
-    padding: 17px;
-    padding-left: 27px;
-    /* border: 2px  solid black; */
-    background-image: url("main/offers.png");
-    background-repeat:no-repeat;
-    font-size: small;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-     color: rgba(236, 8, 8, 0.63);
-     text-shadow:  #200303 0.15px 2px 2.5px;
-     
-   
-}
-
-
-.packageone{
- display: block;
- /* flex: 20%; */ 
- /* grid-template-rows: fit-content(150px) fit-content(150) fit-content(40) 1.5fr; */
- box-sizing:content-box;
- /* border:7px solid rgb(255, 255, 255) ; */
- box-shadow: 5px 10px #888888;
- border-radius: 45px;
- background:linear-gradient(108deg,rgba(20, 7, 77, 0.7) 0%,rgba(141, 25, 122, 0.603)100%) ,url("main/buttonsbk1.jpg") center transparent;
- font-family: Arial, Helvetica, sans-serif;
- /* margin:20px; */
- height: 30rem;
- width: 16rem;
- margin-right: 1rem;
- justify-content: center;
- text-align: center;
- /* width: 20vh; */
- color: white;
- 
- margin-bottom: 40px;
-
-}
-
-.packageone h1{
-    padding-top: 1rem;
-    
-    font-family: cursive;
-    text-shadow: 2px 4px rgba(196, 211, 211, 0.452);
-    
-}
-.packageone .offer{
-    width: 2px;
-    height: 2px;
-    transform: scale(0.101);
-    margin-left: 12.6rem;
-    position: absolute;
-    margin-top: -4px;
-    
- 
-
-}
-.packageone .discount{
-   
-    position: relative;
-    font-weight: bold;
-    font-size: 10rem;
-    margin-top: -30rem;
-    margin-left: 15rem;
-    
-}
-
-.packageone .pic{
-    height: 13em;
-    /* text-align: center; */
-    /* align-self: center; */
-    margin-top: 15px;
-    margin-bottom: 15px; 
-    width: 16.025rem;
-    /* border-style:solid; */
-    /* border-radius: 20px ; */
-
-
-
-}
-.packageone p{
-    margin: 0.5rem;
-    margin-left:1rem ;
-    border-left:5px solid red;
-    padding-left:5px;
-    text-align: left;
-    margin-right: 1rem ;
-    color: white;
-}
-
-.packageone button{
-    padding: 15px;
-    margin-top: 0rem;
-    border-radius: 35px ;
-    color:white;
-    background-color:lightcoral;
-    background-attachment: fixed;
-
-}
-.packageone button:hover{
-    background-color: red;
-    font-size: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.packageone:hover{
-    /* height: 62vh; */
- /* width: 21rem; */
- /* border-color:  rgb(248, 178, 15); */
- /* font-size: 31px; */
- text-shadow: 0px 0px;
- color: wheat;
- transform: scale(1.05);
-}
-
-#subscriber{
-    margin-left: 4em;
-    background-color:white ;
-    border-radius:10px ;
-    padding:2em;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    justify-content: center;
-    text-align:center;
-    box-shadow: 8px 10px 18px 3px rgba(139, 141, 148, 0.829);
-    padding-bottom: 4em;
-    width: 24em;
-    height: 30em;
-    box-sizing:border-box;
-
-}
-
-#subscriber img{
-   width: 200px;
-}
-
-#subscriber h1{
-    padding: 0.25em;
-    font-size: 30px;
-    border-left:10px solid rgb(54, 16, 224);
-}
-#subscriber p{
-    padding: 1em;
-    font-weight: bold;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size:25px;
-}
-#subscriber input{
-   margin: 1rem;
-   margin-top: 2rem;
-   border-radius: 30px 30px;
-   border: 5px solid  rgba(4, 29, 110, 0.993);
-   width: 18rem;
-   height: 3rem;
-   font-size: 30px;
-}
-
-#subscriber button{
-    padding: 12px 40px ;
-    margin-top: 1rem;
-    background:linear-gradient(15deg,rgb(241, 16, 110) 0%,rgb(33, 8, 90)100%);
-    border:2px solid  rgba(28, 8, 119, 0.63);
-    border-radius: 5px;
-    color: white;
-    font-size: 20px;
-}
-#subscriber button:hover{
-    transform: scale(1.15);
-}  
-
-#aboutus{
- margin:3em;
- /* transform: ; */
- padding:1rem;
-}
-
-#aboutus h1{
-    border-left: 12px solid red;
-    /* border-bottom: 4px solid red; */
-    font-family:monospace;
-    font-size: 35px;
-    padding: 12px;
-    margin-bottom: 1em;
-    font-weight:bold;
-    /* font-stretch:narrower; */
-    
-    text-shadow: #554a4a 0.15px 2px 2.5px;
-    }
-    #aboutus p{
-        padding-left: 900px;
-        padding-right: 100px;
-        padding-inline-end: 10px;
-        text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 22px;
-        color:grey;
-        
-    padding-left:15px;
-    border-left: 12px solid red;
-    }
-
-    #contactus{
-    
-       background:  linear-gradient(108deg,rgba(50, 50, 51, 0.5) 0%,rgba(126, 131, 79, 0.5)100%) ,url("MAIN/contactus.jpg") no-repeat transparent;
-       background-size: cover;
-       width: 100%;
-       height: 12%;
-       padding-top: 1rem;
-       color: white;
-       padding-left:5rem;
-       margin-bottom: 10px;
-       display: flex;
-       flex-direction: column;
-    }
-    #contactus ul{
-       list-style: none;
-
-       
-    }
-
-    #contactus ul li{
-       text-align:center; 
-       float: left;
-       padding-top:2rem ;
-       margin-left: 6rem; 
-       width: 22%;
-       
-    }   
-    .footer{
-        position: relative;
-        text-align: center;
-        bottom: 0;
-    }                                
-    
-
-/* The popup form - hidden by default */
-.form-popup {
-  display: none;
-  position: fixed;
-  top:0;
- left:40%;
- margin-top:13rem;
-padding:20px;
-  border: 3px solid #f1f1f1;
-  z-index: 9;
-
-
-}
-
-/* Add styles to the form container */
-.form-container {
-  max-width: 300px;
-  padding: 10px;
-  background-color: white;
-}
-
-/* Full-width input fields */
-.form-container input[type=text], .form-container input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
-}
-
-/* When the inputs get focus, do something */
-.form-container input[type=text]:focus, .form-container input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-/* Set a style for the submit/login button */
-.form-container .btn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  margin-bottom:10px;
-  opacity: 0.8;
-}
-
-/* Add a red background color to the cancel button */
-.form-container .cancel {
-  background-color: red;
-}
-
-/* Add some hover effects to buttons */
-.form-container .btn:hover{
-  opacity: 1;
-}
-    .close{
-        position:absolute;
-        top:0;
-        right:14px;
-        font-size: 42px;
-        transform: rotate(45deg); 
-     
-        /* position: fixed;     */
-    }
-   .open-button{
-    cursor: pointer; 
-   }
-   #feedbkgd{
-      
-    background: linear-gradient(15deg,rgb(62, 73, 62) 0%,rgb(72, 88, 71)100%);
-    /* display: initial; */
-    width: 100%;
-    height: 44rem;
-    top:0;
-     position:fixed;
-     opacity: 0.8;
-     display: none;
-   }
-
-
-</style>
- 
-
 
 
 <body>
-    <section id="body">
+    <div id="cover" ></div>  <section id="body">
    
 <section id ="background">
     <marquee class="ad" style = "border:2px deeppink solid ;background-color:deeppink; color:ghostwhite;" behavior ="alternate"><b>welcome to ₹BHARAT@Yatra.com - TourtoIndia</b></marquee>    
@@ -599,11 +73,65 @@ padding:20px;
                 <li>Transport</li>
                 <a href="#aboutus"><li>About us</li></a>
                 <a href="#contactus"><li>Contact us</li></a>
-               <li class="open-button" onclick="openForm()" >Feedback</li>
+               <a href="#loginScreen"><li >Feedback</li></a>
             </ul>
         
         </div>
     </nav>
+
+        <div id="loginScreen">
+        
+        <div class="wrapper" >
+            <div class="left">
+                <h3>Signup/ Login</h3>   
+              <img src="/Main/logo1.png" >
+              <h1>Welcome To</h1>
+              <h2>₹BHARAT@Yatra.com</h2>
+            </div>
+            <div class="right">
+              <div class="tabs">
+                <ul>
+                  <li class="signup_li">signup</li>
+                  <li class="login_li">login</li>
+                </ul>
+              </div>
+              
+              <div class="signup" >
+                <form id="form" onsubmit="return validate()">
+                    <div class="input_field">
+                   <i class="fa fa-user fa-lg"><input maxlength="30"  type="text" placeholder="Username" id="username" class="input"></i>
+          
+                  </div>
+                  <div class="input_field">
+                    <input type="text" placeholder="E-mail" id="email" class="input"><i class="fa fa-envelope"></i>
+                  </div>
+                  <div class="input_field">
+                    <input type="password" placeholder="Password" id="password" class="input"><i class="fa fa-key fa-lg"></i> 
+                  </div>
+                <a href="#" class="cancel"><button class="btn">signup</button>
+              </div></a>
+              </form>
+              
+              <div class="login"> 
+                  <form id="form1" onsubmit="return validate1()">
+                <div class="input_field">
+                   
+                   
+                          <input type="text" placeholder="E-mail" id="email1" class="input"><i class="fa fa-envelope"></i>
+                        </div>
+                        <div class="input_field">
+                          <input type="password" placeholder="Password" id="password1" class="input"><i class="fa fa-key fa-lg"></i> 
+                        </div>
+                <a href="#" class="cancel">
+                  <button  class="btn" > Login</button>
+              </div></a>
+            </form>
+              
+            </div>
+          </div>
+
+        </div>
+      
     <div id="heading">
         <!-- <img src="png-hINDIacover.png"/> -->
         <h3> WELCOME TO |  INCREDIBLE</h3>
@@ -704,7 +232,8 @@ As we all knew that India is an incredible country and every single place has it
     Our team consists of highly accomplished and experienced adventurers who have done anything that one could imagine from traveling to the North and South Poles.
     </p> 
 </section>
-<section id="contactus">
+<section id="cont" >
+    <div id="contactus">
     <h1>Contact us</h1>
     <h2>Have a query for us ? Get in touch with our customer service:</h2>
     <ul>
@@ -729,52 +258,39 @@ As we all knew that India is an incredible country and every single place has it
                 
         </li>
     </ul> 
-    <br/><br/><br/>
+    
+</div>
+              <div class="icon-bar">
+			<a href='#' class='facebook' target='_blank'>
+				click here to visit<i class=" fab fa-facebook-f"></a></i>
+
+			<a href='#' class='twitter' target='_blank'>
+				click here to visit<i class=" fab fa-twitter"></i>
+			</a>
+			
+			<a href='https://www.instagram.com/vinodthapa55/' class='instagram' target='_blank'>
+				click here to visit<i class="fab fa-instagram"></i>
+			</a>
+			<a href='' class='linkedin' target='_blank'>
+				click here to visit<i class="fab fa-linkedin-in"></i>
+			</a>
+			<p id="icon"><a href='https://www.youtube.com/thapatechnical' class='youtube' target='_blank'>
+			click here to visit<i class=" fab fa-youtube"></i></a>
+            </p>
+        </div>
 </section>
 <section class="footer">
        <div ><P>&COPY; 2020 BharatYatra Network Private Limited . All rights reserved.</P></div>
 </section>
 
     </section>
-</section>
+
     <!-- div for feedback -->
-   
-            <div class="form-popup" id="myForm">
-                <form action="/action_page.php" class="form-container">
-                  <h1>feedback</h1>
-              <div  type="button" class="close" onclick="closeForm()">
-                +
-            </div>
-                  <label for="email"><b>Email</b></label>
-                  <input type="text" placeholder="Enter Email" name="email" required>
+
+      
               
-                  <label for="psw"><b>Password</b></label>
-                  <input type="password" placeholder="Enter Password" name="psw" required>
-               <textarea name="comments" cols="20" rows="4" >Enter your comments...</textarea>
-                  <button type="submit" class="btn">submit</button>
-                  <!-- <>Close</button> -->
-                </form>
-              </div>
-              
-              
+    </section>
     
-    <script>
-               
-
-              function openForm() {
-                document.getElementById("myForm").style.display = "block";
-              document.getElementById("feedbkgd").style.display = "initial";
-   
-
-        
-              }
-              
-              function closeForm() {
-                document.getElementById("myForm").style.display = "none";
-              
-                document.getElementById("feedbkgd").style.display="none";
-              }
-              </script>
 </body>
  
 
