@@ -15,82 +15,96 @@ body{
     width: 100%;
     height: 44rem;
     
-    background: url("main/torismcover.jpg") center no-repeat;
+    background: linear-gradient(15deg,rgba(255, 255, 251, 0.082) 0%,rgba(255, 255, 255, 0.507)100%),url("main/torismcover.jpg") center no-repeat;
     background-size: cover;
     background-position: fixed;
     position: relative;
     box-shadow: 0px 0px 40px 15px rgba(30, 163, 7, 0.801) ;
     
 }
+#background2{
+    display: flex;
+    flex-direction: row; 
+     margin-top: 0.4rem;
+}
 #container {
-     margin-left: 52%;
+    flex: 85%;
+    margin-left: 60%;
+      position: absolute;
+  
 
 }
 
 
 
 #container ul{
-                list-style:none;
-                position: fixed;
-               
-            }
+    list-style:none;
+    position: fixed;
+   
+}
 
-            #container ul li{
-           
-                background:linear-gradient(15deg,rgba(240, 239, 238, 0.281) 0%,rgba(253, 255, 250, 0.281)100%) ,transparent;
-              
-               padding-left: 20px;
-               padding-right:15px ;
-               margin-left: 10px;
-                border-radius: 20px;
-                box-shadow:   2px 3px gainsboro;
-                height: 50px;
-                line-height: 50px;
-                text-align: center;
+#container ul li{
 
-                float: left;
-                color:rgb(14, 13, 13);
-                font-size: 18px;
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                font-style: bold;
-                position:relative;
-            }
-            #container ul li:hover {
-                background-image:url('main/buttonsbk1.jpg');
-            color: whitesmoke;
-            }
-            
-            #container ul ul{
-                display:none;
-               
-            }
-            #container ul ul li{
-                width:120px;
-                margin-left:-12px;
-               
-            }
-            #container ul li:hover > ul{
-                display:block;
-                width:150px;
-                position:absolute;
-                
-            }
-            #container ul ul ul{
-                margin-left:113px;
-                top:0px;
-                position: absolute;
-            }
+    background:linear-gradient(15deg,rgba(240, 239, 238, 0.281) 0%,rgba(253, 255, 250, 0.281)100%) ,transparent;
 
-            #background img{
-                margin-top: -2.8rem;
-                float: left;
-                margin-right: 1rem;
+   padding-left: 20px;
+   padding-right:15px ;
+   margin-left: 10px;
+    border-radius: 20px;
+    box-shadow:   2px 3px gainsboro;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    
+    float: left;
+    color:rgb(14, 13, 13);
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: bold;
+    position:relative;
+}
+#container ul li:hover {
+    background-image:url('/Main/buttonsbk1.jpg');
+color: whitesmoke;
 
-            }
+}
+
+#container ul ul{
+    display:none;
+   
+}
+#container ul ul li{
+    width:120px;
+    margin-left:-12px;
+    
+   
+}
+#container ul li:hover > ul{
+    display:block;
+    width:120px;
+    position: relative;;
+    
+}
+#container ul ul ul{
+    margin-left:113px;
+    top:0px;
+    position: relative;
+    margin-top: -2.3rem;
+}
+ #background2 img{
+    
+    margin-top:-3rem;
+    margin-right: -4rem;
+    top:0;
+     margin-left: 1rem;
+     position: relative;
+        width:230px;
+
+ }
 
             #heading
             { width: 100%;
-             height: 95%;
+             height: 80%;
                 top:0;
                 padding-top:17px ;
                 background:linear-gradient(15deg,rgba(255, 255, 251, 0.082) 0%,rgba(255, 255, 255, 0.507)100%), url("main/png-hINDIacover.png") center no-repeat;
@@ -120,7 +134,7 @@ body{
                 font-size:25px;
                  text-align: center; 
                 
-                margin-top: 215px;
+                margin-top: 147px;
                 color:#4e3418;
                 margin-left: -50px;
                 position: relative;
@@ -136,7 +150,7 @@ body{
             .open{
                  margin-left: 46%; 
                 /* justify-content: center; */
-                margin-top: -44px;
+                margin-top: -4.4rem;
                 
             }
 
@@ -538,7 +552,7 @@ body{
     
 }
 
-a i {
+.icon-bar a i {
     border-left:3px solid white;
     padding-left: 10px;
    margin-left: 10px;
@@ -567,30 +581,4 @@ a:hover {
   }
   /* FEEDBACK */
   
-  #cover{
-    position:fixed;
-    background:rgba(0,0,0,0.6);
-    z-index:5;
-    width:100%;
-    height:100%;
-    display:block;
-      }
-  #loginScreen
-  {
   
-    position: relative;
-       
-    z-index:10;
-    display:block;
-
-  }
-  
-  .cancel
-  {
-    display:block;
-    position: absolute;
-    
-    
-  
-   
-  }

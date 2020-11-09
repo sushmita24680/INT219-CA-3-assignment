@@ -6,42 +6,19 @@
     <title>TourtoIndia</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="main/validation.css"/>
-    <script src="signupValidation.js"></script>
-    <script src="signinValidation.js"></script>
-    
-    <script>
-        $(document).ready(function(){
-  $(".login").hide();
-$(".signup_li").addClass("active");
-
-$(".login_li").click(function(){
-  $(this).addClass("active");
-  $(".signup_li").removeClass("active");
-  $(".login").show();
-   $(".signup").hide();
-});
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
 
 
-$(".signup_li").click(function(){
-  $(this).addClass("active");
-  $(".login_li").removeClass("active");
-  $(".signup").show();
-   $(".login").hide();
-});
-});</script>
-  
 </head>
 
 
-<body>
-    <div id="cover" ></div>  <section id="body">
+<body><div id="cover" ></div>  
+    <section id="body">
    
 <section id ="background">
     <marquee class="ad" style = "border:2px deeppink solid ;background-color:deeppink; color:ghostwhite;" behavior ="alternate"><b>welcome to ₹BHARAT@Yatra.com - TourtoIndia</b></marquee>    
   
-    <nav>  <img src="main/logo1.png"/>
+    <nav id="background2">  <img src="main/logo1.png"/>
         <div id = "container">
             
             <ul>
@@ -70,68 +47,17 @@ $(".signup_li").click(function(){
                          
                     </ul>
                 </li>
-                <li>Transport</li>
+               
                 <a href="#aboutus"><li>About us</li></a>
                 <a href="#contactus"><li>Contact us</li></a>
-               <a href="#loginScreen"><li >Feedback</li></a>
+               <a href="Main/feedback.html"><li >Feedback</li></a>
             </ul>
         
         </div>
     </nav>
 
-        <div id="loginScreen">
-        
-        <div class="wrapper" >
-            <div class="left">
-                <h3>Signup/ Login</h3>   
-              <img src="/Main/logo1.png" >
-              <h1>Welcome To</h1>
-              <h2>₹BHARAT@Yatra.com</h2>
-            </div>
-            <div class="right">
-              <div class="tabs">
-                <ul>
-                  <li class="signup_li">signup</li>
-                  <li class="login_li">login</li>
-                </ul>
-              </div>
-              
-              <div class="signup" >
-                <form id="form" onsubmit="return validate()">
-                    <div class="input_field">
-                   <i class="fa fa-user fa-lg"><input maxlength="30"  type="text" placeholder="Username" id="username" class="input"></i>
-          
-                  </div>
-                  <div class="input_field">
-                    <input type="text" placeholder="E-mail" id="email" class="input"><i class="fa fa-envelope"></i>
-                  </div>
-                  <div class="input_field">
-                    <input type="password" placeholder="Password" id="password" class="input"><i class="fa fa-key fa-lg"></i> 
-                  </div>
-                <a href="#" class="cancel"><button class="btn">signup</button>
-              </div></a>
-              </form>
-              
-              <div class="login"> 
-                  <form id="form1" onsubmit="return validate1()">
-                <div class="input_field">
-                   
-                   
-                          <input type="text" placeholder="E-mail" id="email1" class="input"><i class="fa fa-envelope"></i>
-                        </div>
-                        <div class="input_field">
-                          <input type="password" placeholder="Password" id="password1" class="input"><i class="fa fa-key fa-lg"></i> 
-                        </div>
-                <a href="#" class="cancel">
-                  <button  class="btn" > Login</button>
-              </div></a>
-            </form>
-              
-            </div>
-          </div>
+     
 
-        </div>
-      
     <div id="heading">
         <!-- <img src="png-hINDIacover.png"/> -->
         <h3> WELCOME TO |  INCREDIBLE</h3>
@@ -145,7 +71,7 @@ $(".signup_li").click(function(){
     </div>
 
 </section>
-<div id="feedbkgd"></div> 
+
 <section class="material">
     <div id="box">
         <br/>
@@ -261,20 +187,20 @@ As we all knew that India is an incredible country and every single place has it
     
 </div>
               <div class="icon-bar">
-			<a href='#' class='facebook' target='_blank'>
+			<a href='https://www.facebook.com' class='facebook' target='_blank'>
 				click here to visit<i class=" fab fa-facebook-f"></a></i>
 
-			<a href='#' class='twitter' target='_blank'>
+			<a href='https://www.twitter.com' class='twitter' target='_blank'>
 				click here to visit<i class=" fab fa-twitter"></i>
 			</a>
 			
-			<a href='https://www.instagram.com/vinodthapa55/' class='instagram' target='_blank'>
+			<a href='https://www.instagram.com' class='instagram' target='_blank'>
 				click here to visit<i class="fab fa-instagram"></i>
 			</a>
 			<a href='' class='linkedin' target='_blank'>
 				click here to visit<i class="fab fa-linkedin-in"></i>
 			</a>
-			<p id="icon"><a href='https://www.youtube.com/thapatechnical' class='youtube' target='_blank'>
+			<p id="icon"><a href='https://www.youtube.com' class='youtube' target='_blank'>
 			click here to visit<i class=" fab fa-youtube"></i></a>
             </p>
         </div>

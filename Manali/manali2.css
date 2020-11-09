@@ -11,12 +11,14 @@ html{
     display: flex;
     flex-direction: row; 
      margin-top: 0.4rem;
+    
 }
 
 #container {
     flex: 85%;
-    margin-left: 52%;
+    margin-left: 62%;
       position: absolute;
+      z-index: 50;
   
 
 }
@@ -36,7 +38,7 @@ html{
 #container ul{
                list-style:none;
                position: fixed;
-            
+              
            }
 
            #container ul li{
@@ -265,7 +267,7 @@ iframe{
     padding-left: 4rem;
     padding-top: -1rem;
     border-left: 3px solid red;
-    margin-bottom: 1rem;  
+      
     padding-bottom: 2rem; 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
@@ -280,6 +282,7 @@ iframe{
 #activitylist h1{
     margin-left: -2rem;
     color: black;
+    margin-bottom: 2rem;
     
 
 }
