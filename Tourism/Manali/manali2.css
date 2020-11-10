@@ -1,0 +1,566 @@
+*{
+   margin: 0px;
+    padding: 0;
+    box-sizing: border-box; 
+}
+}
+html{
+    scroll-behavior: smooth;
+}
+#background2{
+    display: flex;
+    flex-direction: row; 
+     margin-top: 0.4rem;
+    
+}
+
+#container {
+    flex: 85%;
+    margin-left: 62%;
+      position: absolute;
+      z-index: 50;
+  
+
+}
+#heading{
+    flex:9%;
+    margin-left: 5rem;
+    padding-left: 20px ;
+    border-left:5px solid white ;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom:4rem;
+    padding-top:1.5rem ;
+}
+
+
+
+#container ul{
+               list-style:none;
+               position: fixed;
+              
+           }
+
+           #container ul li{
+          
+               background:linear-gradient(15deg,rgba(240, 239, 238, 0.281) 0%,rgba(253, 255, 250, 0.281)100%) ,transparent;
+           
+              padding-left: 20px;
+              padding-right:15px ;
+              margin-left: 10px;
+               border-radius: 20px;
+               box-shadow:   2px 3px gainsboro;
+               height: 50px;
+               line-height: 50px;
+               text-align: center;
+               
+               float: left;
+               color:rgb(14, 13, 13);
+               font-size: 18px;
+               font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+               font-style: bold;
+               position:relative;
+           }
+           #container ul li:hover {
+               background-image:url('buttonsbk1.jpg');
+           color: whitesmoke;
+
+           }
+           
+           #container ul ul{
+               display:none;
+              
+           }
+           #container ul ul li{
+               width:120px;
+               margin-left:-12px;
+               
+              
+           }
+           #container ul li:hover > ul{
+               display:block;
+               width:120px;
+               position: relative;;
+               
+           }
+           #container ul ul ul{
+               margin-left:113px;
+               top:0px;
+               position: relative;
+               margin-top: -2.3rem;
+           }
+            #background2 img{
+                flex:6%;
+               margin-top:-3rem;
+               margin-right: -4rem;
+               top:0;
+                margin-left: 1rem;
+                position: relative;
+                width: 230px;
+
+            }
+
+body{
+    background:linear-gradient(55deg,rgba(138, 135, 135, 0.521) 0%,rgba(47, 47, 53, 0.164)100%), url("manali.jpg");
+    background-size:  cover;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#info{
+    position: relative;
+	margin-top: 2rem;
+	background-color: white;
+	border-radius: 50px 50px;
+	margin-left: 40px;
+    margin-right:40px;
+    opacity: 0.8;
+    flex: 60%;
+}
+
+#mapframe{
+       flex: 40%;
+      margin-right: 2rem;
+    margin-top: 3rem;
+    margin-left: 1rem;
+    padding-left: 3rem;
+    border-left: 3px solid gray;
+    margin-bottom: 2rem; 
+}
+
+#mapframe h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(14, 13, 13);
+    margin: 1rem;
+    margin-left: 2rem;
+}
+
+#map{ 
+ 
+    height: 440px; 
+    width:590px; 
+    position: relative;
+    
+    background-color: rgb(255, 255, 255);
+    opacity: 1;
+    border-radius: 15px;
+    box-shadow: 8px 10px 18px 3px rgba(139, 141, 148, 0.829);
+   } 
+   #live{
+       background-color: red;
+       padding: 5px;
+       width: 50px;
+    border-radius: 3px;
+    color: white;
+    font-weight: bolder;
+    border-style: inherit;
+    font-size: 10px;
+    position:absolute;
+    margin-top: 3px;
+    margin-left: 52em;
+    
+   }
+
+iframe{
+    margin-top:1.3em ;
+    height: 388px;
+    width: 540px;
+    margin-left: 1.2rem;
+    opacity: 1;
+   background-color:solid white ;
+    border:0;
+     
+}
+#mapdes{
+    margin-left:5rem ;
+    margin-top: 1rem;
+
+}
+/* #info h1{
+    margin-top:2rem;
+    padding-top:2em;
+    margin-left: ;
+} */
+
+/* frame{
+    min-height:100vh;
+    background-color:#a89cde;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  } */
+  
+  
+  .mySlides {display: none}
+.mySlides img {vertical-align:left;
+    height: 15rem;
+    margin-top:1.5rem;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 500px;
+  height: 450px;
+  position: relative;
+  margin-left: 1rem;
+
+}
+
+#day{
+    padding: 7px;
+    border-radius: 10px;
+    background: linear-gradient(55deg,rgb(245, 11, 22) 0%,rgb(28, 14, 223)100%);
+    color: white;
+    font-weight: bold;
+    border-style: solid;
+    font-size: 15px;
+    
+}
+
+#mapframe #payment{
+    margin-left:10rem;
+    margin-right: 8rem;
+    margin-top: -1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(9, 34, 66);
+    font-weight: bolder;
+    border-radius: 8px 0px 8px 0px ;
+    border-style: solid ;
+    padding-left: 20px;
+    border-color:  rgb(255, 0, 0);
+    background-color: rgb(236, 204, 25);
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -42px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+#activitylist{
+    margin-left: 27rem;
+    margin-top: -17rem;
+    color: rgb(59, 56, 56);
+    font-size: 25px;
+    padding-left: 4rem;
+    padding-top: -1rem;
+    border-left: 3px solid red;
+      
+    padding-bottom: 2rem; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.texts{
+    padding: 5px;
+    margin-left: -1rem;
+    margin-bottom: 7px;
+
+}
+
+#activitylist h1{
+    margin-left: -2rem;
+    color: black;
+    margin-bottom: 2rem;
+    
+
+}
+#activitylist xline{
+    padding: 20px;
+    border:1px solid red;
+}
+
+
+active,.texts:hover{
+    color: red;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+/* Caption text */
+/* .text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+} */
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  margin-top: 2.5rem;
+  font-weight: bold ;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0px 6px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active ,.dot:hover {
+  background-color: #ff0000;
+  color: #ff0000;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+ 
+#instruct{
+    width: 45rem;
+    background: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 22px;
+    
+}
+#instruct h2{
+    border-bottom: 3px solid red;
+    margin-right: 20px;
+    padding-bottom: 10px;
+}
+
+#instruct p{
+    color:  rgba(41, 3, 3, 0.781);
+}
+
+#sections{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+	
+}
+#page{
+    margin-top: 1rem;
+	background-color: white;
+	border-radius: 50px 50px;
+	margin-left: 40px;
+    margin-right:40px;
+    opacity: 0.8; 
+    display: flex;
+    flex-direction: column;
+    position: relative;
+	
+}
+
+#section2{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-left: 1.2rem;
+}
+
+#section2 #facilites{
+    flex:14%;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    padding-right: 1rem;
+      border-right: 3px solid rgb(113, 70, 192);
+    margin-right: 4.5rem;
+    margin-bottom: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#facilities i{
+    margin-top: 1rem;
+    
+}
+#faclit{
+    list-style: none;
+    margin-top: 3rem;
+    
+}
+
+ #faclit li{
+    margin-bottom: 1rem;
+    padding-bottom: 2px;
+    font-size: 22px;
+    margin-left: -1rem;
+}
+#section2 #hotels{
+
+    flex:35%;
+    margin-top: 0.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left:-40px ;
+    margin-bottom: 3rem;
+}
+#hotelframe div{
+    display: flex;
+    flex-direction: row;
+    flex: 50%;
+}
+
+#hotels duba{
+    flex:25%;
+   padding:50px;
+    margin-top: 0.5rem;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    margin-bottom: 0.5rem;
+    background:linear-gradient(55deg,rgba(245, 11, 23, 0.287) 0%,rgba(28, 14, 223, 0.233)100%) ;
+    font-size: 30px;
+    color:white
+}
+#hotelframe{
+    margin-bottom: 1rem;
+    
+    margin-right: 23.4rem;
+    padding: 20px;
+    box-shadow:8px 10px 18px 3px rgba(139, 141, 148, 0.829) ;
+}
+
+/* #hotelframe:hover{
+    transform:scale(1.1);
+ 
+} */
+ #hotels duba:hover{
+  transform: scale(1.9);
+  color:#00000000;
+cursor: pointer;
+ background: #000000;
+   
+}
+
+
+
+#hotelframe #one {  
+    background:linear-gradient(55deg,rgba(44, 3, 5, 0.692) 0%,rgba(51, 51, 61, 0.233)100%) , url("hotel.jpg");
+    background-size: cover;
+}
+#hotelframe #two {  
+    background:linear-gradient(55deg,rgba(44, 3, 5, 0.692) 0%,rgba(51, 51, 61, 0.233)100%) , url("exterior\ view.jpg");
+ 
+  
+  background-size: cover;
+}
+#hotelframe #three {  
+    background:linear-gradient(55deg,rgba(44, 3, 5, 0.692) 0%,rgba(51, 51, 61, 0.233)100%) , url("classsic\ room-bed.jpg");
+
+  background-size: cover;
+}
+#hotelframe #four  {  
+    background:linear-gradient(55deg,rgba(0, 0, 0, 0.692) 0%,rgba(51, 51, 61, 0.233)100%) , url("juniorsuite-bedroom.jpg");
+  
+  background-size: cover;
+}
+#hotelframe #one:hover {  
+    background-image: url("hotel.jpg");
+    opacity: 1;
+ 
+  background-size: cover;
+}
+#hotelframe #two:hover {  
+    background-image:url("exterior\ view.jpg");
+  opacity: 1;
+  background-blend-mode: normal;
+  background-size: cover;
+}
+#hotelframe #three:hover {  
+    background-image: url("classsic\ room-bed.jpg");
+  opacity: 1;
+  background-size: cover;
+}
+#hotelframe #four:hover  {  
+    background-image: url("juniorsuite-bedroom.jpg");
+  opacity: 1;
+  background-size: cover;
+}
+#section2 #schedule{
+    flex: 52%; 
+    margin-left: -20.4rem;
+    margin-top: 1rem;
+    padding-left: 2rem; 
+    border-left: 3px solid rgba(4, 78, 4, 0.746);  
+    margin-bottom: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#schedule h1{
+   
+}
+
+#schedule p{
+    border: 4px solid orangered;
+    margin-left: 0.5rem;
+    margin-right: 2rem;
+    padding-bottom:10px ;
+    padding-top:10px ;
+    margin-top: 5px;
+    font-size: 22px;
+    padding-left: 40px;
+    color: rgb(9, 9, 78);
+    margin-bottom: 1rem;
+
+
+}
+
+#schedule p:hover{
+    background-color: rgb(9, 100, 9);
+    color: rgb(238, 231, 170);
+    cursor: pointer;
+    border-color: ;
+    border-color: rgb(7, 78, 7);
+} 
+
+#book{
+    position: fixed;
+    bottom:0;
+    left:0;
+    
+   padding-left: 4rem;
+   padding-right: 4rem;
+   margin-left: 36rem;
+   padding-top: 0.3rem;
+   border-radius: 50px 50px 0%  0%   ;
+   text-align: center;
+   font-size: 30px;
+   background: linear-gradient(35deg,rgb(219, 4, 15) 0%,rgb(8, 31, 107)100%);
+   color: white;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#book:hover{
+    transform: scaley(1.2);
+    background: linear-gradient(35deg,rgb(22, 5, 71) 0%,rgb(218, 16, 16)100%);
+    transition: 0.5s ease;
+  
+}

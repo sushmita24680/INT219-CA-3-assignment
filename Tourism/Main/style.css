@@ -1,0 +1,584 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+    
+*{
+    margin: 0;
+    padding: 0;
+      box-sizing: border-box; 
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    display:initial;
+}
+#background{
+    width: 100%;
+    height: 44rem;
+    
+    background: linear-gradient(15deg,rgba(255, 255, 251, 0.082) 0%,rgba(255, 255, 255, 0.507)100%),url("torismcover.jpg") center no-repeat;
+    background-size: cover;
+    background-position: fixed;
+    position: relative;
+    box-shadow: 0px 0px 40px 15px rgba(30, 163, 7, 0.801) ;
+    
+}
+#background2{
+    display: flex;
+    flex-direction: row; 
+     margin-top: 0.4rem;
+}
+#container {
+    flex: 85%;
+    margin-left: 60%;
+      position: absolute;
+  
+
+}
+
+
+
+#container ul{
+    list-style:none;
+    position: fixed;
+   
+}
+
+#container ul li{
+
+    background:linear-gradient(15deg,rgba(240, 239, 238, 0.281) 0%,rgba(253, 255, 250, 0.281)100%) ,transparent;
+
+   padding-left: 20px;
+   padding-right:15px ;
+   margin-left: 10px;
+    border-radius: 20px;
+    box-shadow:   2px 3px gainsboro;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    
+    float: left;
+    color:rgb(14, 13, 13);
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: bold;
+    position:relative;
+}
+#container ul li:hover {
+    background-image:url('buttonsbk1.jpg');
+color: whitesmoke;
+
+}
+
+#container ul ul{
+    display:none;
+   
+}
+#container ul ul li{
+    width:120px;
+    margin-left:-12px;
+    
+   
+}
+#container ul li:hover > ul{
+    display:block;
+    width:120px;
+    position: relative;;
+    
+}
+#container ul ul ul{
+    margin-left:113px;
+    top:0px;
+    position: relative;
+    margin-top: -2.3rem;
+}
+ #background2 img{
+    
+    margin-top:-3rem;
+    margin-right: -4rem;
+    top:0;
+     margin-left: 1rem;
+     position: relative;
+        width:230px;
+
+ }
+
+            #heading
+            { width: 100%;
+             height: 80%;
+                top:0;
+                padding-top:17px ;
+                background:linear-gradient(15deg,rgba(255, 255, 251, 0.082) 0%,rgba(255, 255, 255, 0.507)100%), url("png-hINDIacover.png") center no-repeat;
+                /*  align-items: center; */
+                /* justify-content: center; */
+                position:initial;
+                
+                
+            }
+
+            #heading h1{
+                font-family:Arial, Helvetica, sans-serif;
+                font-size: 150px;
+                text-align: center;
+                top: 0;
+                color:#4e3418;
+                
+                /* margin-top: -10px; */
+                padding-top:28px;
+                margin-left: -26px;
+                position: relative;
+
+            }
+
+            #heading h3{
+                font-family:Arial, Helvetica, sans-serif;
+                font-size:25px;
+                 text-align: center; 
+                
+                margin-top: 147px;
+                color:#4e3418;
+                margin-left: -50px;
+                position: relative;
+
+            }
+            /* #heading h4{
+                font-size: 200px;
+                color: white;
+                font-family:Arial, Helvetica, sans-serif;
+
+            } */
+
+            .open{
+                 margin-left: 46%; 
+                /* justify-content: center; */
+                margin-top: -4.4rem;
+                
+            }
+
+            #open{
+                padding: 0.5px 25px 2px 25px;
+                border-radius: 50px 50px 0px 0px;
+                background-color: rgba(39, 141, 20, 0.767);
+                box-shadow: -0px -2px 3px 3px  rgba(15, 90, 3, 0.801);
+                border-style:inherit;
+               color: white;
+               font-weight: bold;
+               font-family: cursive;
+               font-size: 18px;
+                border:2px 2px 0px 0px  lawngreen;
+                /* position: absolute; */
+            }
+            .open a{
+                text-decoration: none;
+                
+            
+                
+            }
+
+            #open:hover{
+                background-color: rgba(21, 107, 6, 0.767);
+            }
+#box{
+    display: block;
+    padding-left: 20px;
+    margin: 3rem;
+   
+
+}
+
+#box h1{
+    border-left: 10px solid rgba(30, 163, 7, 0.801) ;
+    padding:15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgba(30, 163, 7, 0.801);
+    margin-bottom: 20px;
+}
+
+#box p{
+    border-left: 10px solid rgba(30, 163, 7, 0.801) ;
+    font-size: 22px;
+    border-bottom:  solid rgba(30, 163, 7, 0.801) ;
+    padding:25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgba(142, 148, 141, 0.801);
+    margin-bottom: 20px;
+}
+
+#box2{
+    display: block;
+    padding-left: 20px;
+    margin: 3rem;
+   
+
+}
+
+#box2 h1{
+    border-left: 10px solid rgba(238, 12, 12, 0.801) ;
+    padding:15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgba(163, 7, 7, 0.801);
+    margin-bottom: 20px;
+}
+
+#box2 p{
+    border-left: 10px solid rgba(238, 12, 12, 0.801) ;
+    font-size: 22px;
+    border-bottom:  solid rgba(238, 12, 12, 0.801) ;
+    padding:25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgba(142, 148, 141, 0.801);
+    margin-bottom: 20px;
+}
+#packwithsub{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.subscribe{
+    border-left: 5px solid red;
+    border-radius: 0.5px 0.5px ;
+}
+.packages{
+    display:flex;
+     flex-direction: row; 
+    /* box-sizing: border-box;  */
+    flex-wrap:wrap;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    
+}
+#offers{
+    margin:2rem ;
+    padding: 17px;
+    padding-left: 27px;
+    /* border: 2px  solid black; */
+    background-image: url("offers.png");
+    background-repeat:no-repeat;
+    font-size: small;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     color: rgba(236, 8, 8, 0.63);
+     text-shadow:  #200303 0.15px 2px 2.5px;
+     
+   
+}
+
+
+.packageone{
+ display: block;
+ /* flex: 20%; */ 
+ /* grid-template-rows: fit-content(150px) fit-content(150) fit-content(40) 1.5fr; */
+ box-sizing:content-box;
+ /* border:7px solid rgb(255, 255, 255) ; */
+ box-shadow: 5px 10px #888888;
+ border-radius: 45px;
+ background:linear-gradient(108deg,rgba(20, 7, 77, 0.7) 0%,rgba(141, 25, 122, 0.603)100%) ,url("buttonsbk1.jpg") center transparent;
+ font-family: Arial, Helvetica, sans-serif;
+ /* margin:20px; */
+ height: 30rem;
+ width: 16rem;
+ margin-right: 1rem;
+ justify-content: center;
+ text-align: center;
+ /* width: 20vh; */
+ color: white;
+ 
+ margin-bottom: 40px;
+
+}
+
+.packageone h1{
+    padding-top: 1rem;
+    
+    font-family: cursive;
+    text-shadow: 2px 4px rgba(196, 211, 211, 0.452);
+    
+}
+.packageone .offer{
+    width: 2px;
+    height: 2px;
+    transform: scale(0.101);
+    margin-left: 12.6rem;
+    z-index: 2;
+    margin-top: -4px;
+    
+ 
+
+}
+.packageone .discount{
+   
+   
+    font-weight: bold;
+    font-size: 10rem;
+    margin-top: -30rem;
+    margin-left: 15rem;
+    
+}
+
+.packageone .pic{
+    height: 13em;
+    /* text-align: center; */
+    /* align-self: center; */
+    margin-top: 15px;
+    margin-bottom: 15px; 
+    width: 16.025rem;
+    /* border-style:solid; */
+    /* border-radius: 20px ; */
+    position: relative;
+
+
+}
+.packageone p{
+    margin: 0.5rem;
+    margin-left:1rem ;
+    border-left:5px solid red;
+    padding-left:5px;
+    text-align: left;
+    margin-right: 1rem ;
+    color: white;
+}
+
+.packageone button{
+    padding: 15px;
+    margin-top: 0rem;
+    border-radius: 35px ;
+    color:white;
+    background-color:lightcoral;
+    background-attachment: fixed;
+
+}
+.packageone button:hover{
+    background-color: red;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.packageone:hover{
+    /* height: 62vh; */
+ /* width: 21rem; */
+ /* border-color:  rgb(248, 178, 15); */
+ /* font-size: 31px; */
+ text-shadow: 0px 0px;
+ color: wheat;
+ transform: scale(1.05);
+}
+
+#subscriber{
+    margin-left: 4em;
+    background-color:white ;
+    border-radius:10px ;
+    padding:2em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center;
+    text-align:center;
+    box-shadow: 8px 10px 18px 3px rgba(139, 141, 148, 0.829);
+    padding-bottom: 4em;
+    width: 24em;
+    height: 30em;
+    box-sizing:border-box;
+
+}
+
+#subscriber img{
+   width: 200px;
+}
+
+#subscriber h1{
+    padding: 0.25em;
+    font-size: 30px;
+    border-left:10px solid rgb(54, 16, 224);
+}
+#subscriber p{
+    padding: 1em;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:25px;
+}
+#subscriber input{
+   margin: 1rem;
+   margin-top: 2rem;
+   border-radius: 30px 30px;
+   border: 5px solid  rgba(4, 29, 110, 0.993);
+   width: 18rem;
+   height: 3rem;
+   font-size: 30px;
+}
+
+#subscriber button{
+    padding: 12px 40px ;
+    margin-top: 1rem;
+    background:linear-gradient(15deg,rgb(241, 16, 110) 0%,rgb(33, 8, 90)100%);
+    border:2px solid  rgba(28, 8, 119, 0.63);
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+}
+#subscriber button:hover{
+    transform: scale(1.15);
+}  
+
+#aboutus{
+ margin:3em;
+ /* transform: ; */
+ padding:1rem;
+}
+
+#aboutus h1{
+    border-left: 12px solid red;
+    /* border-bottom: 4px solid red; */
+    font-family:monospace;
+    font-size: 35px;
+    padding: 12px;
+    margin-bottom: 1em;
+    font-weight:bold;
+    /* font-stretch:narrower; */
+    
+    text-shadow: #554a4a 0.15px 2px 2.5px;
+    }
+    #aboutus p{
+        padding-left: 900px;
+        padding-right: 100px;
+        padding-inline-end: 10px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 22px;
+        color:grey;
+        
+    padding-left:15px;
+    border-left: 12px solid red;
+    }
+    #cont{
+        background:  linear-gradient(108deg,rgba(50, 50, 51, 0.5) 0%,rgba(126, 131, 79, 0.5)100%) ,url("contactus.jpg") no-repeat transparent;
+       background-size: cover; 
+       width: 100%;
+       height: 18%;
+    }
+    #contactus{
+    
+       
+      
+       padding-top: 1rem;
+       margin-left: 4rem;
+       color: white;
+       padding-left:2rem;
+       margin-bottom: 10px;
+       display: flex;
+       flex-direction: column;
+       padding-bottom: 5rem;
+      
+    }
+    #contactus ul{
+       list-style: none;
+       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-left: 3rem;
+    }
+
+    #contactus ul li{
+       text-align:center; 
+       float: left;
+       padding-top:2rem ;
+       margin-left: 6rem; 
+       width: 22%;
+       
+    }   
+    .footer{
+        position: relative;
+        text-align: center;
+        bottom: 0;
+    }                                
+    
+
+
+
+.icon-bar {
+	position: absolute;
+    margin-top: -9rem;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+    z-index: 50;
+   
+    
+}
+
+.icon-bar a {
+	text-decoration: none;
+	width: 210px;
+	
+	color: #fff;
+    display: flex;
+    border-radius: 15px;
+	justify-content: flex-end;
+	align-items: center;
+    padding: 5px;
+    margin-top: 0.2rem;
+	font-size: 20px;
+	transform: translateX(-140px);
+	-webkit-transform: translateX(-140px);
+	-ms-transform: translateX(-140px);
+	transition: all 0.5s linear;
+	-webkit-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;  
+ 
+}
+#icon:hover{
+    color: white;
+}
+.icon-bar .facebook:hover {
+    background: #3b5998;
+    
+}
+
+
+.icon-bar .twitter:hover{
+    background: #00aced;
+    ;
+}
+
+.icon-bar .instagram:hover {
+    background: #e4405f;
+   
+}
+
+.icon-bar .youtube:hover{
+	background: #cd201f;
+}
+
+.icon-bar .linkedin:hover{
+	background: #0077B5;
+}
+
+ {
+   
+    
+}
+
+.icon-bar a i {
+    border-left:3px solid white;
+    padding-left: 10px;
+   margin-left: 10px;
+   width: 70px;
+    color: rgb(255, 235, 235);
+	font-size: 40px !important;
+	animation: letszoom 3s linear alternate-reverse infinite;
+}
+
+@keyframes letszoom {
+	from {
+		transform: scale(0.8);
+	}
+
+	to {
+		transform: scale(1);
+	}
+
+}
+
+a:hover {
+	transform: translateX(0);
+	-webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    color: white ;
+  }
+  /* FEEDBACK */
+  
+  
